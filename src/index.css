@@ -18,3 +18,42 @@ code {
     monospace; */
   
 }
+
+.hero {
+ background-image: url('./assets/Frame 1.png');
+ background-repeat: no-repeat;
+ background-size:100% 100% ;
+}
+
+.payments {
+  background-image: url('./assets/payments-floor 1.png');
+  background-repeat: no-repeat;
+  background-size:100% 50%;
+  
+}
+
+.cashcard {
+  background-image: url('./assets/boost-stairs-1.png');
+  background-repeat: no-repeat;
+  background-size:70% 100%;
+}
+.cashcard2 {
+  background-image: url('./assets/boost-stairs-2.png');
+  background-repeat: no-repeat;
+  background-size:70% 100%;
+}
+.investing{
+  /* background-image: url('./assets/');
+  background-repeat: no-repeat; */
+  /* background-size:100% 50%; */
+}
+
+/* .cash{
+  
+}
+.app {
+  z-index: 40;
+}
+.phoneImg {
+  z-index:5;
+} */

@@ -3,12 +3,12 @@ import Logo from '../assets/Vector.png'
 import EyeImg from '../assets/eye.png'
 const Navbar = () => {
   return (
-    <nav className='text-white flex justify-between px-[60px] py-[10px]'>
+    <nav className='text-white flex justify-between px-[61px] py-[10px]'>
         <div>
             <img src={Logo} alt='logo' ></img>
         </div>
-        <div>
-            <ul className='font- flex gap-[8px]'>
+        <div className='flex items-center'>
+            <ul className='text-[12px]  w-full font-semibold leading-[18px] flex gap-[24px] bg-transparent'>
                 <li>SIGN IN</li>
                 <li>LEGAL</li>
                 <li>LICENCES</li>
