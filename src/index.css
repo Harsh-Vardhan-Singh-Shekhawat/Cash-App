@@ -42,12 +42,17 @@ code {
   background-repeat: no-repeat;
   background-size:70% 100%;
 }
-.investing{
-  /* background-image: url('./assets/');
-  background-repeat: no-repeat; */
-  /* background-size:100% 50%; */
+.investing-rays{
+  background-image: url('./assets/investing-rays 1.png');
+  background-repeat: no-repeat; 
+  background-size:100% 50%;
 }
 
+.investing-floor {
+  background-image: url('./assets/investing-floor 1.png');
+  background-repeat: no-repeat; 
+  background-size:100% 50%;
+}
 /* .cash{
   
 }
