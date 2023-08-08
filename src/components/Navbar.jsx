@@ -1,9 +1,10 @@
 import React from 'react'
 import Logo from '../assets/Vector.png'
 import EyeImg from '../assets/eye.png'
+import About from './About'
 const Navbar = () => {
   return (
-    <nav className='text-white flex justify-between px-[61px] py-[10px]'>
+    <nav className='text-white flex justify-between px-[61px] py-[20px]'>
         <div>
             <img src={Logo} alt='logo' ></img>
         </div>
@@ -21,7 +22,8 @@ const Navbar = () => {
             </ul>
         </div>
         <div>
-            <img src={EyeImg} alt='eye-img'></img>
+            {/* <img src={EyeImg} alt='eye-img'></img> */}
+            <About />
         </div>
       </nav>
   )
