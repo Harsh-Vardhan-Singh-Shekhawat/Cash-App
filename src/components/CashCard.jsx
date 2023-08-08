@@ -23,7 +23,7 @@ const CashCard = () => {
           </p>
         </div>
         <img
-          className="relative top-24 z-10 left-[750px]"
+          className="relative top-24 z-10 left-[700px]"
           src={boostPhoneImg}
           alt="boostPhoneImg"
         />
