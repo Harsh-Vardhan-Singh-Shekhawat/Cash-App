@@ -19,7 +19,7 @@ const Banking = () => {
       <div className=" transform absolute top-1/2 md:left-[40%] -tanslate-x-1/2 -translate-y-1/2 z-10">
         <img src={BankingPhoneImg} alt="bankingphone" />
       </div>
-      <div className="w-[310px] text-left absolute left-80 top-72">
+      <div className="w-[310px] text-left absolute md:left-80 md:top-72">
         <h1 className="text-white font-extrabold text-[40px]">Banking</h1>
         <p className="font-medium font-sans text-[16px] leading-[22px] tracking-[0.3px] text-black">
           Receive your paycheck, tax returns, and other direct deposits up to

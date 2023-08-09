@@ -12,7 +12,7 @@ const CashCard = () => {
   return (
     <section className="w-full h-screen bg-black">
       <div className="absolute">
-        <div className="w-[350px] text-left absolute left-80 top-48">
+        <div className="md:w-[350px] text-left absolute md:left-80 md:top-48">
           <h1 className="text-[#00D54B] leading-[40px] font-extrabold text-[40px]">
             Cash Card & Boost
           </h1>
@@ -23,7 +23,7 @@ const CashCard = () => {
           </p>
         </div>
         <img
-          className="relative top-24 z-10 left-[700px]"
+          className="relative md:top-24 z-10 md:left-[700px]"
           src={boostPhoneImg}
           alt="boostPhoneImg"
         />

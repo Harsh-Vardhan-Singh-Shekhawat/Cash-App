@@ -4,51 +4,59 @@ import investingRayImg from "../assets/investing-rays 1.png";
 import investingFloorImg from "../assets//investing-floor 1.png";
 import investingStocksImg from "../assets/investing-bitcoin.png";
 import investingBitcoinImg from "../assets/investing-bitcoin.png";
-import investingGraphImg from '../assets/investing-graph-1.png'
-import investingGraphImg2 from '../assets/investing-graph-2.png'
+import investingGraphImg from "../assets/investing-graph-1.png";
+import investingGraphImg2 from "../assets/investing-graph-2.png";
 
 const Investing = () => {
   return (
     <section className="absolute w-full h-screen overflow-hidden bg-[#00D54B]">
-      <div className="w-full h-screen">
+      <div className="w-full md:h-screen">
         <img className="w-full" src={investingRayImg} alt="inv-img"></img>
       </div>
-      <div className="absolute top-[370px] w-full">
+      <div className="absolute bottom-0 w-full">
         <img className="w-full" src={investingFloorImg} alt="inv-floor-img" />
       </div>
 
-      <div className="absolute top-20 z-10 w-full">
+      <div className="absolute md:top-20 top-4 z-10 w-full">
         <h1 className="text-4xl text-white">Investing</h1>
-        <div className="flex justify-evenly items-center mt-10 w-full">
-          <div className="w-[350px] mb-40 text-left">
-            <h1 className=" font-extrabold text-[22px]">Stocks</h1>
-            <p className="font-medium font-sans  text-[18px] leading-[22px] text-black">
-              Whether you’re an expert or just getting started, Cash App is the
-              fastest and most accessible way to invest in stocks. Start now
-              with as little as $1.
-            </p>
+        <div className="flex md:flex-row flex-col justify-evenly items-center md:mt-10 mt-4 w-full">
+          <div className="md:mb-40 text-left flex px-4 gap-[10px] md:gap-[60px]">
+            <div className="mt-10 md:w-[350px]">
+              <h1 className=" font-extrabold text-[22px]">Stocks</h1>
+              <p className="font-medium font-sans  md:text-[18px] leading-[22px] text-black">
+                Whether you’re an expert or just getting started, Cash App is
+                the fastest and most accessible way to invest in stocks. Start
+                now with as little as $1.
+              </p>
+            </div>
+            <img className="md:w-[160px] w-[100px]" src={investingStocksImg} alt="stockimg"></img>
           </div>
-          <div className="flex gap-[60px]">
-            <img  src={investingStocksImg} alt="stockimg"></img>
-            <img src={investingBitcoinImg} alt="bitcoinimg"></img>
-          </div>
-          <div className="w-[350px] mb-40 text-left">
-            <h1 className="font-extrabold text-[22px]">Bitcoin</h1>
-            <p className="font-medium font-sans  text-[18px] leading-[22px] text-black">
-              Cash App is the fastest way to convert dollars to bitcoin. From
-              your home screen, six taps are all it takes to stack sats, buy an
-              entire bitcoin, or just see what it’s all about.
-            </p>
+          
+          <div className="md:mb-40 mb-4 text-left flex px-4  md:gap-[60px] gap-[10px]">
+            <img
+              className="md:w-[160px] w-[100px]"
+              src={investingBitcoinImg}
+              alt="bitcoinimg"
+            ></img>
+            <div className="md:w-[350px] mt-10 text-left">
+              <h1 className="font-extrabold text-[22px]">Bitcoin</h1>
+              <p className="font-medium font-sans  md:text-[18px] leading-[22px] text-black">
+                Cash App is the fastest way to convert dollars to bitcoin. From
+                your home screen, six taps are all it takes to stack sats, buy
+                an entire bitcoin, or just see what it’s all about.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="absolute top-[350px] w-full">
-        <img src={investingGraphImg} alt="investingGraphImg" />
+
+      <div className="absolute md:top-[350px] top-[530px] w-full">
+        <img className="md:w-[640px] w-[160px]" src={investingGraphImg} alt="investingGraphImg" />
       </div>
-      <div className="absolute top-[40px] w-full left-[1281px]">
-        <img src={investingGraphImg2} alt="investingGraphImg2" />
+      <div className="absolute md:top-[40px] top-[360px] w-full md:left-[1281px] left-[240px]">
+        <img className="md:w-[260px] w-[140px]" src={investingGraphImg2} alt="investingGraphImg2" />
       </div>
-      <InvestingFooter  />
+      <InvestingFooter />
     </section>
   );
 };

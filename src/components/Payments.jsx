@@ -12,7 +12,7 @@ const Payments = () => {
   return (
     <section className="w-full bg-[#F8F6F6]">
       <div className="payments w-full h-screen relative top-[330px]">
-        <div className="w-[350px] text-left absolute left-80 -top-48">
+        <div className="w-[350px] text-left absolute md:left-80 md:-top-48">
           <h1 className="text-[#00D54B] font-extrabold text-[40px]">Payments</h1>
           <p className="font-medium font-sans  text-[16px] leading-[22px] tracking-[0.3px] text-black">
             Send and receive money with anyone, donate to an important cause, or

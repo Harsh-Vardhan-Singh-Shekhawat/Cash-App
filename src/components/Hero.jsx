@@ -17,14 +17,14 @@ const Hero = () => {
             <img className='absolute top-10 right-48' src={stairImg} alt='stairImg'></img>
         </div>
         <div className='text-white absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 m-auto '>
-            <h1 className='cash font-extrabold text-[193px] leading-[166px] tracking-[0.5px]'>CASH</h1>
+            <h1 className='cash font-extrabold md:text-[193px] leading-[166px] tracking-[0.5px]'>CASH</h1>
             <div className='phoneImg z-10'>
-                <img className='absolute -top-[70px] left-56 z-0' src={phoneImg} alt='phone-img' />
+                <img className='absolute md:-top-[70px] md:left-56 z-0' src={phoneImg} alt='phone-img' />
             </div>
-            <h1 className='app relative font-extrabold text-[193px] bg-transparent leading-[166px] tracking-[0.5px] z-20'>APP</h1>
+            <h1 className='app relative font-extrabold md:text-[193px] bg-transparent leading-[166px] tracking-[0.5px] z-20'>APP</h1>
         </div>
         <div>
-            <img className='absolute left-64 bottom-24' src={cubesImg} alt='cubesImg'/>
+            <img className='absolute md:left-64 md:bottom-24' src={cubesImg} alt='cubesImg'/>
             <img className='absolute bottom-0 right-80' src={pillarImg} alt='pillarImg'></img>
         </div> 
       <Footer />

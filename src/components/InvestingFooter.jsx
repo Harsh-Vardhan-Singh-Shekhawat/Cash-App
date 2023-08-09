@@ -6,8 +6,8 @@ import MessageIcon from "../assets/Message.png";
 const Footer = () => {
   return (
     <footer className="w-full px-[61px] py-[20px] text-white absolute bottom-0 z-10 flex justify-between">
-      <div className="flex gap-[20px]">
-        <div className="md:w-[170px] text-black md:h-[50px] bg-white rounded-[7px] p-4 border-black border-[1px] cursor-pointer">
+      <div className="md:flex gap-[20px]">
+        <div className="md:w-[170px] text-black h-[50px] bg-white rounded-[7px] p-4 border-black border-[1px] cursor-pointer">
           <button className=" leading-[12px] flex items-center gap-[10px]  ">
             <span>
               <BsApple className="text-[#00D54B] text-[20px]" />
@@ -15,7 +15,7 @@ const Footer = () => {
             <span className="text-[12px] text-black">APP STORE</span>
           </button>
         </div>
-        <div className="md:w-[170px] md:h-[50px] rounded-[7px] bg-white p-[14px] border-black border-[1px] cursor-pointer">
+        <div className="md:w-[170px] h-[50px] rounded-[7px] bg-white p-[14px] border-black border-[1px] cursor-pointer">
           <button className=" leading-[12px] flex justify-between items-center ">
             <span>
               <BiLogoPlayStore className="text-[#00D54B] text-[20px] gap-[10px]" />
