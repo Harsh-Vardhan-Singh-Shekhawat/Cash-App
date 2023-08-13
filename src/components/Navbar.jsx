@@ -1,32 +1,52 @@
-import React from 'react'
-import Logo from '../assets/Vector.png'
-import About from './About';
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import {CgMenuRight} from 'react-icons/cg';
 import { Link } from 'react-router-dom';
-const Navbar = () => {
-  return (
-    <nav className='text-white flex justify-between md:px-[61px] md:py-[20px]'>
-        <div>
+import Logo from '../assets/Vector.png'
+import About from './About'
+
+function Navbar() {
+	const navRef = useRef();
+
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
+
+	return (
+		<header className='navbar text-white flex justify-between md:px-[61px] md:py-[20px] z-50 '>
+			<div>
             <Link to='/'> <img  src={Logo} alt='logo' ></img></Link>
-        </div>
-        <div className='flex items-center'>
-            <ul className='md:text-[12px] font-semibold leading-[18px] flex md:flex-row flex-col gap-[24px] bg-transparent'>
-                <li className=' hover:text-[#00D54B]'><Link to='/signin'>SIGN IN</Link></li>
-                <li className=' hover:text-[#00D54B]'><Link to='/legal'>LEGAL</Link></li>
-                <li className=' hover:text-[#00D54B]'><Link to='/licences'>LICENCES</Link></li>
-                <li className=' hover:text-[#00D54B]'><Link to='/security'>SECURITY</Link></li>
-                <li className=' hover:text-[#00D54B]'><Link to='/career'>CAREERS</Link></li>
-                <li className=' hover:text-[#00D54B]'><Link to='/press'>PRESS</Link></li>
-                <li className=' hover:text-[#00D54B]'><Link to='/support'>SUPPORT</Link></li>
-                <li className=' hover:text-[#00D54B]'><Link to='/status'>STATUS</Link></li>
-                <li className=' hover:text-[#00D54B]'><Link to='/codeblog'>CODEBLOG</Link></li>
-            </ul>
-        </div>
-        <div>
-            {/* <img src={EyeImg} alt='eye-img'></img> */}
-            <About />
-        </div>
-      </nav>
-  )
+            </div>
+			<nav  className='md:text-[12px] font-semibold leading-[18px] flex md:flex-row flex-col md:bg-transparent md:ml-28 bg-black z-40' ref={navRef}>
+				<Link className='transition duration-150 ease-in-out hover:text-[#00D54B] text-underline' href="/signin">SIGN IN</Link>
+				<Link className='transition duration-150 ease-in-out hover:text-[#00D54B] text-underline' href="/legal">LEGAL</Link>
+				<Link className='transition duration-150 ease-in-out hover:text-[#00D54B] text-underline' href="/licences">LICENCES</Link>
+				<Link className='transition duration-150 ease-in-out hover:text-[#00D54B] text-underline' href="/security">SECURITY</Link>
+                <Link className='transition duration-150 ease-in-out hover:text-[#00D54B] text-underline' href="/careers">CAREERS</Link>
+                <Link className='transition duration-150 ease-in-out hover:text-[#00D54B] text-underline' href="/press">PRESS</Link>
+                <Link className='transition duration-150 ease-in-out hover:text-[#00D54B] text-underline' href="/support">SUPPORT</Link>
+                <Link className='transition duration-150 ease-in-out hover:text-[#00D54B] text-underline' href="/status">STATUS</Link>
+                <Link className='transition duration-150 ease-in-out hover:text-[#00D54B] text-underline' href="/codeblog">CODEBLOG</Link>
+
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+                <About />
+			</nav>
+			<button
+				className="nav-btn relative left-32"
+				onClick={showNavbar}>
+				<CgMenuRight />
+			</button>
+            <div>
+
+            </div>
+		</header>
+	);
 }
 
-export default Navbar
+export default Navbar;

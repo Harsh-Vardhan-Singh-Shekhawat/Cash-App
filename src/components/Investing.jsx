@@ -2,7 +2,7 @@ import React from "react";
 import InvestingFooter from "./InvestingFooter";
 import investingRayImg from "../assets/investing-rays 1.png";
 import investingFloorImg from "../assets//investing-floor 1.png";
-import investingStocksImg from "../assets/investing-bitcoin.png";
+import investingStocksImg from "../assets/investing-stocks.png";
 import investingBitcoinImg from "../assets/investing-bitcoin.png";
 import investingGraphImg from "../assets/investing-graph-1.png";
 import investingGraphImg2 from "../assets/investing-graph-2.png";
@@ -53,7 +53,7 @@ const Investing = () => {
       <div className="absolute md:top-[350px] top-[530px] w-full">
         <img className="md:w-[640px] w-[160px]" src={investingGraphImg} alt="investingGraphImg" />
       </div>
-      <div className="absolute md:top-[40px] top-[360px] w-full md:left-[1281px] left-[240px]">
+      <div className="absolute md:top-[40px] top-[360px] w-full md:left-[1281px] left-[260px]">
         <img className="md:w-[260px] w-[140px]" src={investingGraphImg2} alt="investingGraphImg2" />
       </div>
       <InvestingFooter />

@@ -11,48 +11,48 @@ export default function About() {
         <button
           onMouseOver={() => setOpen(true)}
         >
-          <span className="mr-4">
-            <img src={eyeImg} alt="eyeImg" />
+          <span className="my-4 relative md:-right-44 ">
+            <img  className='md:w-[60px] ' src={eyeImg} alt="eyeImg" />
           </span>
         </button>
         <div
-          className={`absolute right-80 w-40 z-10 ${open ? "block" : "hidden"}`}
+          className={`absolute md:right-40 right-32 md:top-10 bottom-16 md:w-40 w-20 z-10 ${open ? "block" : "hidden"}`}
         >
-          <div className="bg-white flex items-center gap-[10px] w-[500px] py-10 rounded-[15px] ">
+          <div className="bg-white flex items-center gap-[10px] md:w-[500px] w-[340px] md:h-[320px] h-[240px]  md:py-10 rounded-[15px]">
             <div className="w-1/2">
               <img
-                className="w-[192px] h-[192px] ml-10"
+                className="md:w-[192px] md:h-[192px] md:ml-10 ml-2"
                 src={aboutImg}
                 alt="aboutimg"
               />
             </div>
-            <div className="text-[#810EA9] w-1/2 text-left">
-              <h1 className="font-extrabold text-[24px] leading-[26px] tracking-[0.5px]">
+            <div className="text-[#810EA9] w-1/2 text-left flex flex-col justify-start">
+              <h1 className="font-extrabold md:text-[24px] text-[20px] leading-[26px] tracking-[0.5px]">
                 OGOLUWA OJEWALE
               </h1>
-              <p className="font- font-sans text-[24px] leading-[26px] tracking-[0.5px]">
+              <p className="mr-6 font-sans md:text-[24px] text-[16px] leading-[26px] tracking-[0.5px]">
                 UI/UX DESIGNER
               </p>
-              <div className="w-full text-left border-[#D560FE] flex flex-col gap-4 border-y-[1px] my-4 py-4">
+              <div className="w-full text-left border-[#D560FE] flex flex-col gap-4 border-y-[1px] md:my-4 my-1 py-1 md:py-4">
                 <h1 className="font-sans opacity-60 text-[24px] tracking-[3px] leading-[20px]">
                   @ogopedia
                 </h1>
                 <div className="flex justify-start gap-4 ">
                   <div className="border-[1px] border-[#810EA9] rounded-full">
-                    <BsBehance className=" text-lg m-2 font-semibold " />
+                    <BsBehance className=" md:text-lg md:m-2 m-1 font-semibold " />
                   </div>
                   <div className="border-[1px] border-[#810EA9] rounded-full">
-                    <BsTwitter className=" text-lg m-2 font-semibold " />
+                    <BsTwitter className=" md:text-lg md:m-2 m-1 font-semibold " />
                   </div>
                   <div className="border-[1px] border-[#810EA9] rounded-full">
-                    <BsInstagram className=" text-lg m-2 font-semibold " />
+                    <BsInstagram className=" md:text-lg md:m-2 m-1 font-semibold " />
                   </div>
                   <div className="border-[1px] border-[#810EA9] rounded-full">
-                    <BsLinkedin className=" text-lg m-2 font-semibold " />
+                    <BsLinkedin className=" md:text-lg md:m-2 m-1  font-semibold " />
                   </div>
                 </div>
               </div>
-              <p className="font-sans font-normal text-[24px] tracking-[0.5px] leading-[26px] opacity-60">
+              <p className="font-sans font-normal md:text-[24px] text-[20px] tracking-[0.5px] leading-[26px] opacity-60">
                 OGOPEDIA.COM
               </p>
             </div>
